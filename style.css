@@ -1,0 +1,342 @@
+
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }   
+    html {
+            scroll-behavior: smooth;
+        }
+    body {
+            line-height: 1.6;
+            color: #333;
+            background-color:EEEBD9 ;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 8%;
+            background: #EEEBD9;
+            color: #2b2929;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .logo{
+            font-size: 1.4rem;
+            display: flex;
+            letter-spacing: 1px;
+            color: #6d6267;
+            text-transform: uppercase;
+        }
+         /* Menu Desktop */
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            color: #09090d;
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #6d6267;
+        }
+
+        /* --- LOGICA DO MENU HAMBÚRGUER --- */
+        #menu-toggle {
+            display: none; /* Esconde o checkbox */
+        }
+
+        .menu-icon {
+            display: none; /* Esconde o ícone no desktop */
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 20px;
+        }
+
+        .menu-icon span {
+            width: 100%;
+            height: 3px;
+            background-color: #6d6267;
+            transition: 0.4s;
+            border-radius: 2px;
+        }
+          /* --- HERO SECTION --- */
+         .hero-section {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://i.pinimg.com/1200x/de/a3/b4/dea3b49598e157a840dc6b67dcbfbe00.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #d0d0de;
+            padding: 0 10px;
+        }
+
+        .hero-content h2 {
+            font-size: clamp(0.5rem, 5vw, 1.5rem);
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            background: #EEEBD9;
+            color: #09090d;
+            text-decoration: none;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 2px;
+            transition: 0.4s;
+        }
+
+        .btn:hover {
+            background: #6d6267;
+            transform: translateY(-3px);
+        }
+            /* --- SERVICES --- */
+            
+         .brands-section {
+            padding: 100px 8%;
+            text-align: center;
+            background-color: #fcfcfc;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0px;
+            color: #09090d;
+            position: relative;
+            padding-bottom: 0px;
+            margin-top: 0px;
+        }
+        .section-title p{
+            font-size: 1rem;
+            color: #09090d;
+            margin-bottom: 50px;
+            margin-top: 0px;
+        }
+
+        .brands-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #EEEBD9;
+        }
+
+       .brands-grid {
+            display: flex;
+            flex-direction: column; /* Altera de linha para coluna */
+            align-items: center;    /* Centraliza os cartões horizontalmente na coluna */
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+        }
+
+        .brand-item {
+            background: #EEEBD9;
+            padding: 0px 40px;
+            flex: 1 1 00px;
+            max-width: 3800px;
+            border: 10px solid none;
+            border-top: 5px solid #EEEBD9;
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .brand-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .brand-item h3 {
+            margin: 8px;
+            color: #09090d;
+            font-size: 1.4rem;
+        }
+
+        .brand-item p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #09090d;
+            line-height: 1.8;
+        }
+        /* --- SERVICES --- */
+        /* Container que segura as linhas */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Cada linha de serviço */
+.service-item {
+    display: flex; /* Flexbox ativo */
+    height: 80vh;  /* Altura da seção */
+    width: 100%;
+    align-items: stretch;
+}
+
+/* Classe para inverter a ordem (zigue-zague) */
+.service-item.reverse {
+    flex-direction: row-reverse;
+}
+
+/* O card de texto */
+.service-card {
+    flex: 1; /* Ocupa 50% da largura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    text-align: center;
+    background-color: #fcfcfc;
+}
+.services-section {
+    text-align: center;
+    background-color: #fcfcfc;
+    border: #fcfcfc 60px solid;
+}
+
+/* 1. Regra base para o efeito Parallax */
+.service-image {
+    flex: 1;
+    min-height: 400px; /* Garante que o espaço exista, como no seu teste de cores */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50% auto; /* Mantém a foto em metade da tela */
+}
+
+/* 2. Posição específica para cada lado do zig-zag */
+
+.img-1 {
+    background-image: url('v2.jpg');
+    background-position: 100% center;   /* Alinha na ESQUERDA (0%) */
+}
+
+.img-2 {
+    background-image: url('a4.jpg');
+    background-position: 0% center; /* Alinha na DIREITA (100%) */
+}
+
+.img-3 {
+    background-image: url('consultoria8.jpg');
+    background-position: 100% center; /* Alinha na DIREITA (100%) */
+}
+/* 3. Ajuste de Empilhamento */
+.service-item {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden; /* Garante que nada escape do bloco */
+}
+/* Botão estilo minimalista */
+.btn-read-more {
+    margin-top: 25px;
+    padding: 10px 30px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Ajuste para Mobile */
+@media (max-width: 768px) {
+    .service-item, .service-item.reverse {
+        flex-direction: column; /* Empilha no celular */
+        height: auto;
+    }
+    .service-image {
+        height: 300px;
+        background-attachment: scroll; /* Melhora performance no mobile */
+    }
+}
+.about-section {
+    padding: 80px 10%;
+    background-color: #f9f9f9; /* Fundo leve */
+    display: flex;
+    justify-content: center;
+}
+/* 1. Garantir que a seção tenha espaço próprio */
+.about-section {
+    padding: 100px 0; /* Aumenta o respiro entre as seções */
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Evita que sombras ou elementos saiam da seção */
+}
+
+/* 2. O container precisa de uma altura para não deixar o conteúdo de baixo subir */
+.about-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 700px; /* AJUSTE AQUI: Uma altura que caiba sua foto e texto */
+    display: flex;
+    align-items: center;
+}
+
+/* 3. A imagem alinhada à esquerda ou direita conforme seu design */
+.about-image {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    z-index: 1;
+}
+
+.about-image img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da foto sem achatar */
+}
+
+/* 4. O card de texto sobreposto */
+.about-content {
+    position: absolute;
+    right: 5%; /* Afastamento da borda direita */
+    width: 55%;
+    background: #EEEBD9; /* Cor leve baseada nos seus prints */
+    padding: 60px 40px;
+    z-index: 2;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.08);
+}
+.footer-content {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #EEEBD9;
+    color: #09090d;
+    font-size: 0.9rem;
+}
