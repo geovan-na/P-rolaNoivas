@@ -3,134 +3,454 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pérola Noivas | Realizando Sonhos em Brasília</title>
+    <title>Pérola Noivas | Alta-Costura Nupcial em Brasília</title>
+    <meta name="description" content="Atelier Pérola Noivas em Brasília. Há mais de 21 anos realizando sonhos com curadoria exclusiva de vestidos de alta-costura Pollardi, Rosa Clará e Pronovias.">
+    <meta name="theme-color" content="#1D1C1A">
+    
+    <!-- Google Fonts: Source Serif 4 & Cabin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..800;1,8..60,300..800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-         @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-    </style>
-
 </head>
 <body>
-    <header class="main-header">
+    <!-- Header / Navbar Sticky com Glassmorphism -->
+    <header class="main-header" id="header">
         <nav class="navbar">
-            <div class="logo">Pérola Noivas</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#marcas">Marcas</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#localizacao">Localização</a></li>
-                <li><a href="https://wa.me/seunumerowhatsapp" class="btn-nav">Agendar Horário</a></li>
-            </ul>
+            <a href="#home" class="logo-link">
+                <div class="logo">
+                    <span class="logo-title">PÉROLA NOIVAS</span>
+                    <span class="logo-subtitle">ATELIER · BRASÍLIA · DESDE 2004</span>
+                </div>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Links de Navegação -->
+            <div class="nav-wrapper" id="navWrapper">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#marcas" class="nav-link">Curadoria</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#sobre" class="nav-link">O Atelier</a></li>
+                    <li><a href="#localizacao" class="nav-link">Localização</a></li>
+                </ul>
+                <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20P%C3%A9rola%20Noivas." 
+                   class="btn-nav" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar Horário
+                </a>
+            </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
             <div class="hero-container">
                 <div class="hero-content">
-                    <h2>Há mais de 21 anos, transformamos o seu sonho em realidade</h2>
-                    <a href="https://wa.me/seunumerowhatsapp" class="btn">Solicitar Atendimento Personalizado</a>
+                    <span class="eyebrow">Alta-Costura Nupcial & Curadoria Internacional</span>
+                    <h1 class="hero-title">Há mais de 21 anos transformando o seu sonho em alta-costura</h1>
+                    <p class="hero-desc">
+                        Vestidos exclusivos das maiores grifes europeias com atendimento intimista e provas privativas em Brasília.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20atendimento%20personalizado%20na%20P%C3%A9rola%20Noivas." 
+                           class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> Solicitar Atendimento
+                        </a>
+                        <a href="#marcas" class="btn btn-outline">
+                            Conhecer as Coleções
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="hero-scroll-indicator">
+                <a href="#marcas" aria-label="Rolar para as marcas">
+                    <span>Explore</span>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </a>
+            </div>
         </section>
+
+        <!-- Marcas / Lookbook de Curadoria -->
         <section id="marcas" class="brands-section">
-            <div class="section-title">
-                <h2>Curadoria Internacional</h2>
-                <p>Marcas extraordinárias que compartilham a mesma paixão pela moda nupcial.</p>
-            </div>
-            <div class="brands-grid">
-                <div class="brand-item">
-                    <h3>Pollardi</h3>
-                    <p>A marca Pollardi, trazida com exclusividade para Brasília pela Pérola Noivas, é uma grife ucraniana reconhecida pelo estilo marcante e inovador. Seus vestidos são criações únicas, com uma pegada mais fashionista, modelagens estruturadas, brilho na medida certa e rendas autorais, desenvolvidas pela própria grife.</p>
-                    <p>Com qualidade impecável e design cuidadoso, a Pollardi segue conquistando os corações de nossas noivas que buscam algo realmente especial.</p>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Exclusividade em Brasília</span>
+                    <h2 class="section-title">Curadoria Internacional</h2>
+                    <div class="divider-gold"></div>
+                    <p class="section-description">
+                        Grifes consagradas nos palcos da moda nupcial mundial, selecionadas a dedo para noivas que exigem acabamento artesanal e presença inesquecível.
+                    </p>
                 </div>
-                <div class="brand-item">
-                    <h3>Rosa Clará</h3>
-                    <p>Desde sua fundação, Rosa Clará tem transformado o universo dos vestidos de noiva, sendo reconhecida por unir tradição, inovação e alta tecnologia em suas criações. Seu sucesso é resultado da qualidade impecável, da elegância de seus vestidos e do talento dos estilistas renomados que integram sua equipe.</p>
-                    <p>Dentro do grupo Rosa Clará, trabalhamos com as marcas Aire, Adriana Alier, Alma e Luna. Cada vestido reflete um compromisso com a elegância, o design impecável e a constante busca pela inovação, tornando realidade o sonho de cada noiva.</p>
-                </div>
-                <div class="brand-item">
-                    <h3>Pronovias</h3>
-                    <p>Pronovias é uma referência mundial no universo dos vestidos de noiva, combinando glamour, sofisticação e designs exclusivos que encantam noivas ao redor do mundo. Trabalhamos com a linha San Patrick, que oferece modelos que equilibram modernidade e ousadia, sempre com acabamentos impecáveis. Cada coleção da Pronovias é cuidadosamente elaborada, traduzindo as últimas tendências da moda em peças únicas.</p>
-                    <p>Com um caimento que exalta a feminilidade, a marca transforma o clássico em algo extraordinário, garantindo uma presença inesquecível no grande dia.</p>
+
+                <div class="brands-grid">
+                    <!-- Brand 1: Pollardi -->
+                    <article class="brand-card">
+                        <div class="brand-image-wrapper">
+                            <img src="assets/marca_pollardi.jpg" alt="Vestido de noiva Pollardi - Alta costura ucraniana" loading="lazy">
+                            <span class="brand-badge">Exclusividade Regional</span>
+                        </div>
+                        <div class="brand-info">
+                            <span class="brand-origin">Ucrânia · Alta-Costura</span>
+                            <h3 class="brand-name">Pollardi</h3>
+                            <div class="brand-tags">
+                                <span class="tag">Rendas Autorais</span>
+                                <span class="tag">Modelagem Estruturada</span>
+                                <span class="tag">Brilho Sob Medida</span>
+                            </div>
+                            <p class="brand-text">
+                                Trazida com exclusividade para Brasília pela Pérola Noivas, a grife ucraniana Pollardi é aclamada pelo design audacioso, silhuetas marcantes e tecidos arquitetônicos desenvolvidos pela própria maison.
+                            </p>
+                            <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20modelos%20da%20grife%20Pollardi." 
+                               class="brand-link" target="_blank" rel="noopener noreferrer">
+                                Consultar Coleção Pollardi <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Brand 2: Rosa Clará -->
+                    <article class="brand-card">
+                        <div class="brand-image-wrapper">
+                            <img src="assets/marca_rosaclara.jpg" alt="Vestido de noiva Rosa Clará - Alta costura espanhola" loading="lazy">
+                            <span class="brand-badge">Design Espanhol</span>
+                        </div>
+                        <div class="brand-info">
+                            <span class="brand-origin">Espanha · Tradição & Inovação</span>
+                            <h3 class="brand-name">Rosa Clará</h3>
+                            <div class="brand-tags">
+                                <span class="tag">Mikado de Seda</span>
+                                <span class="tag">Linhas Puras</span>
+                                <span class="tag">Aire & Adriana Alier</span>
+                            </div>
+                            <p class="brand-text">
+                                Ícone de sofisticação contemporânea, o grupo Rosa Clará une alta tecnologia têxtil à delicadeza do corte clássico. Representamos as prestigiosas linhas Aire, Adriana Alier, Alma e Luna.
+                            </p>
+                            <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20modelos%20Rosa%20Clar%C3%A1." 
+                               class="brand-link" target="_blank" rel="noopener noreferrer">
+                                Consultar Coleção Rosa Clará <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Brand 3: Pronovias -->
+                    <article class="brand-card">
+                        <div class="brand-image-wrapper">
+                            <img src="assets/marca_pronovias.jpg" alt="Vestido de noiva Pronovias - Coleção San Patrick" loading="lazy">
+                            <span class="brand-badge">Haute Couture</span>
+                        </div>
+                        <div class="brand-info">
+                            <span class="brand-origin">Espanha · Glamour Mundial</span>
+                            <h3 class="brand-name">Pronovias</h3>
+                            <div class="brand-tags">
+                                <span class="tag">Linha San Patrick</span>
+                                <span class="tag">Caudas Catedral</span>
+                                <span class="tag">Romantismo Atemporal</span>
+                            </div>
+                            <p class="brand-text">
+                                A referência global no universo dos casamentos. Trabalhamos com a cobiçada linha San Patrick, combinando sensualidade refinada, ilusões em tule francês e caimentos que valorizam cada curva da noiva.
+                            </p>
+                            <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20modelos%20Pronovias%20San%20Patrick." 
+                               class="brand-link" target="_blank" rel="noopener noreferrer">
+                                Consultar Linha San Patrick <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-      <section id="servicos" class="services-section">
-    <div class="section-title">
-        <h2>Nossos Serviços</h2>
-        <p>Tudo o que você precisa para o seu dia perfeito em um só lugar.</p>
-    </div>
+        <!-- Serviços Section -->
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Experiência Completa</span>
+                    <h2 class="section-title">Nossos Serviços</h2>
+                    <div class="divider-gold"></div>
+                    <p class="section-description">
+                        Cuidado artesanal em cada etapa da jornada, desde a primeira prova até o grande dia.
+                    </p>
+                </div>
 
-    <div class="services-container">
-        <div class="service-item">
-            <div class="service-card">
-                <h3>Aluguel de Vestidos</h3>
-                <p>Coleções exclusivas das maiores grifes internacionais para aluguel, com ajustes inclusos.</p>
-                <a href="#" class="btn-read-more">SABER MAIS</a>
+                <div class="services-grid">
+                    <!-- Serviço 1 -->
+                    <div class="service-card">
+                        <div class="service-media">
+                            <img src="assets/servico_aluguel.jpg" alt="Acervo de aluguel de vestidos de noiva de alta-costura" loading="lazy">
+                        </div>
+                        <div class="service-body">
+                            <div class="service-number">01</div>
+                            <h3 class="service-title">Aluguel de Alta-Costura</h3>
+                            <p class="service-text">
+                                Acesso a modelos originais das maiores maisons europeias para locação premium, com prova de corpo e todos os ajustes de alfaiataria fina rigorosamente inclusos.
+                            </p>
+                            <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Aluguel%20de%20Vestidos." 
+                               class="service-cta" target="_blank" rel="noopener noreferrer">
+                                Saber Mais <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Serviço 2 -->
+                    <div class="service-card">
+                        <div class="service-media">
+                            <img src="assets/servico_acessorios.jpg" alt="Acessórios finos para noivas: tiaras, brincos e mantilhas" loading="lazy">
+                        </div>
+                        <div class="service-body">
+                            <div class="service-number">02</div>
+                            <h3 class="service-title">Acessórios Finos</h3>
+                            <p class="service-text">
+                                Curadoria preciosa de brincos em pérolas naturais, tiaras banhadas, coroas cravejadas e mantilhas em renda francesa desenhadas para harmonizar perfeitamente com seu vestido.
+                            </p>
+                            <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Acess%C3%B3rios%20Finos." 
+                               class="service-cta" target="_blank" rel="noopener noreferrer">
+                                Saber Mais <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Serviço 3 -->
+                    <div class="service-card">
+                        <div class="service-media">
+                            <img src="assets/servico_consultoria.jpg" alt="Atendimento e consultoria individualizada com estilista" loading="lazy">
+                        </div>
+                        <div class="service-body">
+                            <div class="service-number">03</div>
+                            <h3 class="service-title">Prova Exclusiva Privativa</h3>
+                            <p class="service-text">
+                                Sala de provas reservada exclusivamente para você e suas acompanhantes, com consultoria personalizada de estilo, espelho de corpo inteiro e brinde comemorativo.
+                            </p>
+                            <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Prova%20Exclusiva%20Privativa." 
+                               class="service-cta" target="_blank" rel="noopener noreferrer">
+                                Agendar Prova <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="service-image img-1"></div>
-        </div>
+        </section>
 
-        <div class="service-item reverse">
-            <div class="service-card">
-                <h3>Acessórios Finos</h3>
-                <p>Curadoria completa de brincos, grinaldas, coroas, tiaras e mantilhas para compor seu visual.</p>
-                <a href="#" class="btn-read-more">SABER MAIS</a>
+        <!-- Sobre / Nossa Promessa -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-visual">
+                        <div class="about-image-card">
+                            <img src="assets/sobre.jpg" alt="Noiva no ateliê Pérola Noivas em Brasília" loading="lazy">
+                            <div class="about-badge-floating">
+                                <span class="badge-num">21+</span>
+                                <span class="badge-lbl">Anos em Brasília</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <span class="section-eyebrow">Nossa História</span>
+                        <h2 class="about-title">Nossa Promessa</h2>
+                        <div class="divider-gold left"></div>
+                        <p class="about-lead">
+                            Seguimos comprometidos e dedicados a trabalhar com marcas extraordinárias que compartilham a mesma paixão pela alta-costura nupcial.
+                        </p>
+                        <p class="about-paragraph">
+                            Em nossa curadoria, escolhemos cuidadosamente o que há de mais belo no cenário internacional, garantindo qualidade milimétrica em cada ponto de renda e estrutura. Para nós, cada vestido que chega ao ateliê passa por mãos cuidadosas, provas atentas e ajustes minuciosos até estar pronto para viver um momento único.
+                        </p>
+                        <p class="about-paragraph">
+                            Nossa missão é muito maior do que vestir: é participar de um sonho, desde o primeiro olhar no espelho até a entrada triunfal no altar.
+                        </p>
+
+                        <!-- Métricas / Estatísticas de Confiança -->
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2004</span>
+                                <span class="stat-label">Ano de Fundação</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">+3.500</span>
+                                <span class="stat-label">Noivas Realizadas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Ajustes Inclusos</span>
+                            </div>
+                        </div>
+
+                        <div class="about-signature">
+                            <span class="signature-text">Pérola Noivas</span>
+                            <span class="signature-role">Alta-Costura para Noivas</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="service-image img-2"></div>
-        </div>
+        </section>
 
-        <div class="service-item">
-            <div class="service-card">
-                <h3>Atendimento Individual</h3>
-                <p>Consultoria especializada com horário agendado para sua total tranquilidade.</p>
-                <a href="#" class="btn-read-more">SABER MAIS</a>
+        <!-- Banner de Conversão Intermediário -->
+        <section class="cta-banner">
+            <div class="container">
+                <div class="cta-banner-content">
+                    <span class="cta-eyebrow">Seu Momento Especial</span>
+                    <h2 class="cta-title">Pronta para viver a experiência do vestido perfeito?</h2>
+                    <p class="cta-subtitle">
+                        Nossos horários são limitados para garantir exclusividade e atenção total à sua prova.
+                    </p>
+                    <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20especial%20para%20provar%20vestidos." 
+                       class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar Atendimento no WhatsApp
+                    </a>
+                </div>
             </div>
-            <div class="service-image img-3"></div>
-        </div>
-    </div>
-</section>
+        </section>
 
- <section id="sobre" class="about-section">
-    <div class="about-container">
-        <div class="about-image">
-            <img src="vestido.jpg" alt="Noiva ou Ateliê">
-        </div>
+        <!-- Localização -->
+        <section id="localizacao" class="location-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Venha nos Conhecer</span>
+                    <h2 class="section-title">Nosso Atelier</h2>
+                    <div class="divider-gold"></div>
+                    <p class="section-description">
+                        Localização privilegiada e ambiente planejado para o seu conforto em Brasília.
+                    </p>
+                </div>
 
-        <div class="about-content">
-            <span class="subtitle">Nossa</span>
-            <h2>PROMESSA</h2>
-            <p>
-                Seguimos comprometidos e dedicados a trabalhar com marcas extraordinárias que compartilham a mesma paixão pela moda nupcial. 
-                Em nossa curadoria, escolhemos cuidadosamente o que há de melhor e mais belo, garantindo qualidade em cada detalhe. 
-                Para nós, cada vestido que chega passa por mãos cuidadosas, provas e ajustes até estar pronto para viver um momento único. 
-                Nossa missão é muito maior do que vestir; é participar de um sonho, desde a escolha até o grande dia. 
-                Cada marca que apresentamos não é apenas um nome, mas parte de um capítulo lindo que escrevemos junto com você.
-            </p>
-            <div class="brand-footer">Pérola Noivas</div>
-        </div>
-    </div>
-</section>
+                <div class="location-cards-grid">
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3>Endereço</h3>
+                        <p>QNA 28, Lote 1<br>Taguatinga Norte — Brasília, DF</p>
+                        <a href="https://maps.google.com/?q=QNA+28+Lote+1+Taguatinga+Norte+Brasilia" 
+                           class="location-link" target="_blank" rel="noopener noreferrer">
+                            Abrir no Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
 
-</section>
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3>Horários de Atendimento</h3>
+                        <p>Segunda a Sexta: 09h às 12h | 13h às 18h<br>Sábados: Atendimento com agendamento prévio</p>
+                        <span class="location-note">Atendimento exclusivo com hora marcada</span>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3>Contato Direto</h3>
+                        <p>Tire dúvidas sobre as coleções e agende sua visita privativa com nossa equipe.</p>
+                        <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20o%20atendimento%20da%20P%C3%A9rola%20Noivas." 
+                           class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Conversar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-       
+
+    <!-- Rodapé Editorial de Luxo -->
     <footer class="main-footer">
-         <div class="footer-content">
-         <section id="localizacao" class="location-section">
-                <h4>Visite Nossa Loja</h4>
-                <address class="location-info">
-                    <p>Qna 28, Lote 1 - Taguatinga Norte, Brasília</p>
-                    <p>Segunda a Sexta: 09h às 12h | 13h às 18h</p>
-                </address>
-                <br>
-            <p>Pérola Noivas - Sonhando e realizando desde 2004.</p>
-            <p>&copy; 2026 Pérola Noivas. Todos os direitos reservados.</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo">PÉROLA NOIVAS</span>
+                    <p class="footer-tagline">Sonhando e realizando com noivas de Brasília e de todo o Brasil desde 2004.</p>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#marcas">Curadoria Internacional</a></li>
+                        <li><a href="#servicos">Nossos Serviços</a></li>
+                        <li><a href="#sobre">O Atelier</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4>Grifes</h4>
+                    <ul>
+                        <li><a href="#marcas">Pollardi (Ucrânia)</a></li>
+                        <li><a href="#marcas">Rosa Clará (Espanha)</a></li>
+                        <li><a href="#marcas">Pronovias · San Patrick</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Atendimento</h4>
+                    <p><i class="fa-solid fa-location-pin"></i> QNA 28, Lote 1 - Taguatinga Norte, Brasília</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> Atendimento via WhatsApp</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/?text=Ol%C3%A1!%20P%C3%A9rola%20Noivas" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pérola Noivas. Todos os direitos reservados. Alta-Costura Nupcial em Brasília.</p>
+                <p class="footer-subtext">Feito com elegância e dedicação.</p>
+            </div>
         </div>
-        </section>
     </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20P%C3%A9rola%20Noivas." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Agende sua prova</span>
+    </a>
+
+    <!-- Script Minimalista para Menu Mobile e Scroll Suave -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navWrapper = document.getElementById('navWrapper');
+        const header = document.getElementById('header');
+
+        // Toggle do Menu Mobile
+        menuToggle.addEventListener('click', () => {
+            const isOpened = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isOpened);
+            menuToggle.classList.toggle('active');
+            navWrapper.classList.toggle('active');
+        });
+
+        // Fechar menu mobile ao clicar em qualquer link
+        document.querySelectorAll('.nav-link, .btn-nav').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.classList.remove('active');
+                navWrapper.classList.remove('active');
+            });
+        });
+
+        // Efeito de sombra sutil na navbar ao rolar
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
